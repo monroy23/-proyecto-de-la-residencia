@@ -1,0 +1,241 @@
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 13vh;
+}
+
+.logoitzo{
+  width: 90px;
+  height: 80px;
+  margin-top: 2px;
+}
+
+.logoproyecto{
+  margin-top: 2px;
+  width: 80px;
+}
+.logocentro{
+  width: 200px;
+  height: 100px;
+  margin-top: -22px;
+}
+
+.logotecnm{
+  height: 70px;
+  width: 150px;
+  margin-top: 9px;
+}
+
+.hader-fixed{
+  position: fixed;
+  top: 85px;
+  left: 0;
+  right: 0;
+}
+
+.hader{
+  display: flex;
+  height: 10vh;
+  background-color: #1d3d90;
+  justify-content: space-between;
+}
+
+.hader h2{
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin: auto;
+  color: #fff;
+}
+
+/* INFORMACIÓN DEL USUARIO*/
+
+.logout{
+  width: 50px;
+  margin-right: 10px;
+}
+
+.hader .user-login{
+  background-color: var(--bgcolor);
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 22vh;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  transition: .4s all;
+  width: 220px;
+}
+
+.user-login h3{
+  display: block;
+  padding: 5px 5px;
+  font-size: 10px;
+}
+
+.user-login .login-item a{
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.login-collapsed{
+  height: 0px;
+}
+
+/* .login-expanded{
+  height: 160px;
+} */
+
+
+/* MENU VERTICAL*/
+
+:root{
+  --width: 240px;
+  --padding: 10px;
+  --bgcolor: #831919;
+  --width-collapsed: 0px;
+}
+
+#nav{
+  background-color: var(--bgcolor);
+  color: #fff;
+  position: fixed;
+  height: 79.5vh;
+  top: 20.5vh;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  transition: .4s all;
+}
+
+#nav:hover{
+  overflow: auto;
+}
+
+#nav::-webkit-scrollbar{
+  width: 10px;
+}
+#nav::-webkit-scrollbar-thumb{
+  background-color: rgb(105, 105, 105);
+  border-radius: 5px;
+}
+
+/* HEADER*/
+
+.hader #header{
+  box-sizing: border-box;
+}
+
+.hader #header #menu-btn{
+  vertical-align: middle;
+}
+
+.hader #header #menu-btn{
+  display: inline-block;
+}
+
+.hader #header #menu-btn{
+  cursor: pointer;
+  padding: 22px 8px;
+  width: 50px;
+  box-sizing: border-box;
+}
+
+.hader #header #menu-btn .btn-hamburger{
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  margin: 5px 0;
+} 
+
+
+/* MENU */
+
+#nav .list{
+  width: var(--width);
+  margin-left: -50px;
+  margin-top: 18px;
+}
+
+#nav .list .list__item{
+  vertical-align: baseline;
+  list-style: none;
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+}
+
+#nav .list__button{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 70%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+#nav .nav__link{
+  color: #831919;
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+#nav .nav__link:hover{
+  color: #fff;
+}
+
+#nav .nav__link--inside{
+  border-radius: 6px ;
+  padding-left: 20px;
+  text-align: left;
+  color: #fff;
+}
+
+#nav .arrow .list__arrow{
+  transform: rotate(90deg);
+}
+
+
+#nav .list__arrow{
+  margin-left: -10px;
+  transition: transform .3s;
+}
+
+#nav .list__show{
+  width: 80%;
+  margin-left: auto;
+  list-style: none;
+  border-left: 2px solid #fff;
+  transition: height .4s;
+  height: 0;
+}
+
+.menu-expanded{
+  width: 210px;
+  overflow: auto;
+}
+
+.menu-collapsed #nav .list__item--click{
+  cursor: pointer;
+}
+
+.menu-collapsed{
+  width: var(--width-collapsed);
+}

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ÁRBOLES</title>
+  <link rel="icon" href="../assets/icono.ico">
+  <link rel="stylesheet" href="http://localhost/residencia/style.css">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+  <style>
+    .container-fluid{
+      margin-top: 34vh;
+      width: 80%;
+    }
+
+    .btn{
+      background-color: rgb(12, 95, 5);
+      color: rgb(255, 255, 255);
+    }
+
+    .btn:hover{
+      background-color: rgb(14, 49, 19);
+      color: #fffefe;
+    }
+
+    span{
+      color: rgba(206, 206, 206, 0);
+      font-weight: bold;
+      color:#79e46b;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="d-flex justify-content-between">
+      <img class="logocentro" src="../assets/logocentro.png" alt="Logo del ayuntamiento de Centro">
+      <img class="logoitzo" src="../assets/logoanterior.webp" alt="Logo del ITZO">
+      <img class="logoproyecto" src="../assets/logopersonal.jpeg" alt="Logo del equipo">
+      <img class="logotecnm" src="../assets/tecnm.png" alt="Logo del Tecnm">
+    </div>
+  </header>
+
+
+  <div class="hader-fixed">
+    <div class="hader">
+      <div id="header">
+        <div id="menu-btn">
+          <div class="btn-hamburger"></div>
+          <div class="btn-hamburger"></div>
+          <div class="btn-hamburger"></div>
+        </div>
+      </div>
+      <h2>SISTEMA DE REGULARIZACIÓN Y VERIFICACIÓN FORESTAL</h2>
+      <img src="../assets/logout.svg" alt="Logout" class="logout">
+      
+      <div class="user-login login-collapsed">
+        <h4>Luis Avalos</h4>
+        <div class="login-item">
+          <a href="#" class="">
+          <img src="../assets/ajustes.svg" class="list__img">
+          Ajustes
+        </a>
+        </div>
+        <div class="login-item">
+          <a href="#" class="">
+          <img src="../assets/cerrarsesion.svg" class="list__img">
+          Cerrar sesión
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <nav id="nav" class="menu-collapsed">
+
+    <ul class="list">
+
+      <li class="list__item">
+        <div class="list__button">
+          <img src="../assets/inicio.svg" class="list__img">
+          <a href="../inicio.html" class="nav__link">Inicio</a>
+        </div>
+      </li>
+
+      <li class="list__item list__item--click">
+        <div class="list__button list__button--click">
+          <img src="../assets/catalago.svg" class="list__img">
+          <a href="#" class="nav__link">Catalagos</a>
+          <img src="../assets/arrow.svg" class="list__arrow">
+        </div>
+
+        <ul class="list__show">
+          <li class="list__inside">
+            <a href="../catalagos/familia.html" class="nav__link nav__link--inside">Familias</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../catalagos/especies.html" class="nav__link nav__link--inside">Especies</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../catalagos/arboles.html" class="nav__link nav__link--inside">Árboles</a>
+          </li>
+        </ul>
+
+      </li>
+
+      <li class="list__item list__item--click">
+        <div class="list__button list__button--click">
+          <img src="../assets/operaciones.svg" class="list__img">
+          <a href="#" class="nav__link">Operaciones</a>
+          <img src="../assets/arrow.svg" class="list__arrow">
+        </div>
+
+        <ul class="list__show">
+          <li class="list__inside">
+            <a href="../operaciones/denuncia.html" class="nav__link nav__link--inside">Denuncias</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../operaciones/verificacion.html" class="nav__link nav__link--inside">Verificación</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../operaciones/dictamen.html" class="nav__link nav__link--inside">Dictamen</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../operaciones/seguimiento.html" class="nav__link nav__link--inside">Seguimiento</a>
+          </li>
+
+        </ul>
+
+      </li>
+
+      <li class="list__item list__item--click">
+        <div class="list__button list__button--click">
+          <img src="../assets/busqueda.svg" class="list__img">
+          <a href="#" class="nav__link">Reportes</a>
+          <img src="../assets/arrow.svg" class="list__arrow">
+        </div>
+
+        <ul class="list__show">
+          <li class="list__inside">
+            <a href="../reportes/reportes-familia.html" class="nav__link nav__link--inside">Familias</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../reportes/reportes-especie.html" class="nav__link nav__link--inside">Especies</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../reportes/reportes-arboles.html" class="nav__link nav__link--inside">Árboles</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../reportes/reportes-denuncia.html" class="nav__link nav__link--inside">Denuncias</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../reportes/reportes-verificacion.html" class="nav__link nav__link--inside">Verificación</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../reportes/reportes-dictamen.html" class="nav__link nav__link--inside">Dictamen</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../reportes/reportes-seguimiento.html" class="nav__link nav__link--inside">Seguimiento</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="list__item">
+        <div class="list__button">
+          <img src="../assets/usuario.svg" class="list__img">
+          <a href="../administracion/administracion.html" class="nav__link">Administración</a>
+        </div>
+      </li>
+
+      <li class="list__item">
+        <div class="list__button">
+          <img src="../assets/nosotros.svg" class="list__img">
+          <a href="../nosotros/nosotros.html" class="nav__link">Nosotros</a>
+        </div>
+      </li>
+
+    </ul>
+  </nav>
+
+
+  <div class="container-fluid">
+    <div class="row mb-5">
+      <div class="col-3">
+        <label for="clave" class="form-label">Clave del árbol</label>
+        <input type="text" id="clave" name="clave" class="form-control" placeholder="Se generará automáticamente" disabled>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="nombrecomun" class="form-label">Nombre común</label>
+        <input type="text" id="nombrecomun" name="nombrecomun" class="form-control">
+      </div>
+      <div class="col">
+        <label for="nombrecientifico" class="form-label">Nombre científico</label>
+        <input type="text" id="nombrecientifico" name="nombrecientifico" class="form-control">
+      </div>
+      <div class="col mb-5">
+        <label for="genero" class="form-label">Género</label>
+        <input type="text" id="genero" name="genero" class="form-control">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label for="sinonimia1" class="form-label">Sinonimias</label>
+        <input type="text" id="sinonimia1" name="sinonimia1" class="form-control" placeholder="Sinonimia 1">
+      </div>
+      <div class="col">
+        <label for="sinonimia2" class="form-label"><span>Sinonimia</span></label>
+        <input type="text" id="sinonimia2" name="sinonimia2" class="form-control" placeholder="Sinonimia 2">
+      </div>
+      <div class="col mb-5">
+        <label for="sinonimia3" class="form-label"><span>Sinonimia</span></label>
+        <input type="text" id="sinonimia3" name="sinonimia3" class="form-control" placeholder="Sinonimia 3">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label for="diametrocopa" class="form-label">Diámetro de copa</label>
+        <input type="text" id="diametrocopa" name="diametrocopa" class="form-control">
+      </div>
+      <div class="col">
+        <label for="clasificacion" class="form-label">Clasificación</label>
+        <select class="form-select" aria-label="Default select example" id="clasificacion" name="clasificacion">
+          <option selected>Seleccione una opción</option>
+          <option value="arbol">Árbol</option>
+          <option value="arbusto">Arbusto</option>
+        </select>
+      </div>
+      <div class="col mb-5">
+        <label for="tipo" class="form-label">Tipo</label>
+        <input class="form-control" list="datalistOptions" id="tipo" name="tipo">
+        <datalist id="datalistOptions">
+          <option value="Ornamental">
+          <option value="Frutal">
+          <option value="Maderable">
+        </datalist>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label for="altura" class="form-label">Altura</label>
+        <input type="text" id="altura" name="altura" class="form-control">
+      </div>
+      <div class="col">
+        <label for="diametropecho" class="form-label">Diámetro de pecho</label>
+        <input type="text" id="diametropecho" name="diametropecho" class="form-control">
+      </div>
+      <div class="col mb-5">
+        <label for="follaje" class="form-label">Follaje</label>
+        <input type="text" id="follaje" name="follaje" class="form-control">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label for="fuste" class="form-label">Fuste</label>
+        <select class="form-select" aria-label="Default select example" id="fuste" name="fuste">
+          <option selected>Seleccione una opción</option>
+          <option value="Daño por enfermedad">Daño por enfermedad</option>
+          <option value="Daño por vandalismo">Daño por vandalismo</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="inclinacionfuste" class="form-label">Inclinación del fuste</label>
+        <select class="form-select" aria-label="Default select example" id="inclinacionfuste" name="inclinacionfuste">
+          <option selected>Seleccione una opción</option>
+          <option value="De 0° a 30° ">De 0° a 30°</option>
+          <option value="De 31° a 60°">De 31° a 60°</option>
+          <option value="De 60° en adelante">De 61° en adelante</option>
+        </select>
+      </div>
+      <div class="col mb-5">
+        <label for="raicesdescubiertas" class="form-label">Raíces del árbol descubiertas</label>
+        <select class="form-select" aria-label="Default select example" id="raicesdescubiertas" name="raicesdescubiertas">
+          <option selected>Seleccione una opción</option>
+          <option value="mucho">Mucho</option>
+          <option value="regular">Regular</option>
+          <option value="poco">Poco</option>
+        </select>
+      </div>
+    </div>
+
+    <div div class="row">
+      <div class="col-4">
+        <label for="longitud" class="form-label">Geolocalización</label>
+        <input type="text" id="longitud" name="longitud" class="form-control" placeholder="Longitud">
+      </div>
+      <div class="col-4 mb-5">
+        <label for="latitud" class="form-label"><span>Geolocalización</span></label>
+        <input type="text" id="latitud" name="latitud" class="form-control" placeholder="Latitud">
+      </div>
+    </div>
+
+    <div div class="row">
+      <div class="col-4">
+        <label for="domicilio" class="form-label">Domicilio</label>
+        <input type="text" id="domicilio" name="domicilio" class="form-control">
+      </div>
+      <div class="col-4">
+        <label for="localidad" class="form-label">Localidad</label>
+        <input type="text" id="localidad" name="localidad" class="form-control">
+      </div>
+      <div class="col-4 mb-5">
+        <label for="municipio" class="form-label">Municipio</label>
+        <input type="text" id="municipio" name="municipio" class="form-control">
+      </div>
+    </div>
+
+    <div div class="row">
+      <div class="col-4">
+        <label for="estado" class="form-label">Estado</label>
+        <input type="text" id="estado" name="estado" class="form-control">
+      </div>
+      <div class="col-4">
+        <label for="lugar" class="form-label">Lugar</label>
+        <input type="text" id="lugar" name="lugar" class="form-control">
+      </div>
+      <div class="col-4 mb-5">
+        <label for="seccion" class="form-label">Sección</label>
+        <input type="text" id="seccion" name="seccion" class="form-control">
+      </div>
+    </div>
+
+    <div class="row w-100 align-items-center">
+      <div class="col text-center mb-5">
+        <button class="btn">Guardar</button>
+      </div>	
+    </div>
+
+    </div>
+
+</body>
+
+<script>
+  const btn = document.querySelector('#menu-btn');
+  const menu = document.querySelector('#nav');
+  btn.addEventListener('click', e => {
+    menu.classList.toggle("menu-expanded");
+    menu.classList.toggle("menu-collapsed");
+
+    document.querySelector('body').classList.toggle('body-expanded');
+  });
+
+
+  const login = document.querySelector('.logout');
+  const main = document.querySelector('.user-login');
+  login.addEventListener('click', f => {
+    main.classList.toggle("login-expanded");
+    main.classList.toggle("login-collapsed");
+  });
+
+
+  let listElements = document.querySelectorAll('.list__button--click');
+
+  listElements.forEach(listElement => {
+    listElement.addEventListener('click', () => {
+
+      listElement.classList.toggle('arrow');
+
+      let height = 0;
+      let menu = listElement.nextElementSibling;
+      if (menu.clientHeight == "0") {
+        height = menu.scrollHeight;
+      }
+      menu.style.height = `${height}px`;
+    })
+  });
+</script>
+
+</html>

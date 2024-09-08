@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESPECIES</title>
+  <link rel="icon" href="den01/logo8.png">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+  <style>
+    .container-fluid{
+      margin-top: 34vh;
+      width: 80%;
+    }
+
+    .btn{
+      background-color: rgb(12, 95, 5);
+      color: rgb(255, 255, 255);
+    }
+
+    .btn:hover{
+      background-color: rgb(14, 49, 19);
+      color: #fffefe;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="d-flex justify-content-between">
+      <img class="logocentro" src="../assets/logocentro.png" alt="Logo del ayuntamiento de Centro">
+      <img class="logoitzo" src="../assets/logoanterior.webp" alt="Logo del ITZO">
+      <img class="logoproyecto" src="../assets/logopersonal.jpeg" alt="Logo del equipo">
+      <img class="logotecnm" src="../assets/tecnm.png" alt="Logo del Tecnm">
+    </div>
+  </header>
+
+
+  <div class="hader-fixed">
+    <div class="hader">
+      <div id="header">
+        <div id="menu-btn">
+          <div class="btn-hamburger"></div>
+          <div class="btn-hamburger"></div>
+          <div class="btn-hamburger"></div>
+        </div>
+      </div>
+      <h2>SISTEMA DE REGULARIZACIÓN Y VERIFICACIÓN FORESTAL</h2>
+      <img src="../assets/logout.svg" alt="Logout" class="logout">
+      
+      <div class="user-login login-collapsed">
+        <h4>Luis Avalos</h4>
+        <div class="login-item">
+          <a href="#" class="">
+          <img src="../assets/ajustes.svg" class="list__img">
+          Ajustes
+        </a>
+        </div>
+        <div class="login-item">
+          <a href="#" class="">
+          <img src="../assets/cerrarsesion.svg" class="list__img">
+          Cerrar sesión
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <nav id="nav" class="menu-collapsed">
+
+    <ul class="list">
+
+      <li class="list__item">
+        <div class="list__button">
+          <img src="../assets/inicio.svg" class="list__img">
+          <a href="../inicio.html" class="nav__link">Inicio</a>
+        </div>
+      </li>
+
+      <li class="list__item list__item--click">
+        <div class="list__button list__button--click">
+          <img src="../assets/catalago.svg" class="list__img">
+          <a href="#" class="nav__link">Catalagos</a>
+          <img src="../assets/arrow.svg" class="list__arrow">
+        </div>
+
+        <ul class="list__show">
+          <li class="list__inside">
+            <a href="../catalagos/familia.html" class="nav__link nav__link--inside">Familias</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../catalagos/especies.html" class="nav__link nav__link--inside">Especies</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../catalagos/arboles.html" class="nav__link nav__link--inside">Árboles</a>
+          </li>
+        </ul>
+
+      </li>
+
+      <li class="list__item list__item--click">
+        <div class="list__button list__button--click">
+          <img src="../assets/operaciones.svg" class="list__img">
+          <a href="#" class="nav__link">Operaciones</a>
+          <img src="../assets/arrow.svg" class="list__arrow">
+        </div>
+
+        <ul class="list__show">
+          <li class="list__inside">
+            <a href="../operaciones/denuncia.html" class="nav__link nav__link--inside">Denuncias</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../operaciones/verificacion.html" class="nav__link nav__link--inside">Verificación</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../operaciones/dictamen.html" class="nav__link nav__link--inside">Dictamen</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../operaciones/seguimiento.html" class="nav__link nav__link--inside">Seguimiento</a>
+          </li>
+
+        </ul>
+
+      </li>
+
+      <li class="list__item list__item--click">
+        <div class="list__button list__button--click">
+          <img src="../assets/busqueda.svg" class="list__img">
+          <a href="#" class="nav__link">Reportes</a>
+          <img src="../assets/arrow.svg" class="list__arrow">
+        </div>
+
+        <ul class="list__show">
+          <li class="list__inside">
+            <a href="../reportes/reportes-familia.html" class="nav__link nav__link--inside">Familias</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../reportes/reportes-especie.html" class="nav__link nav__link--inside">Especies</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../reportes/reportes-arboles.html" class="nav__link nav__link--inside">Árboles</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../reportes/reportes-denuncia.html" class="nav__link nav__link--inside">Denuncias</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../reportes/reportes-verificacion.html" class="nav__link nav__link--inside">Verificación</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../reportes/reportes-dictamen.html" class="nav__link nav__link--inside">Dictamen</a>
+          </li>
+
+          <li class="list__inside">
+            <a href="../reportes/reportes-seguimiento.html" class="nav__link nav__link--inside">Seguimiento</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="list__item">
+        <div class="list__button">
+          <img src="../assets/usuario.svg" class="list__img">
+          <a href="../administracion/administracion.html" class="nav__link">Administración</a>
+        </div>
+      </li>
+
+      <li class="list__item">
+        <div class="list__button">
+          <img src="../assets/nosotros.svg" class="list__img">
+          <a href="../nosotros/nosotros.html" class="nav__link">Nosotros</a>
+        </div>
+      </li>
+
+    </ul>
+  </nav>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col mb-5">
+        <label for="tipo" class="form-label">Nombre de la especie</label>
+        <input class="form-control" list="datalistOptions" id="tipo" name="tipo">
+        <datalist id="datalistOptions">
+          <option value="Anacardiaceae">
+          <option value="Apocynaceae">
+          <option value="Arecaceae">
+          <option value="Bignoniaceae">
+          <option value="Bixaceae">
+          <option value="Burseraceae">
+          <option value="Casuarinaceae">
+          <option value="Combretaceae">
+          <option value="Cupressaceae">
+          <option value="Fabaceae">
+          <option value="Lamiaceae">
+          <option value="Lauraceae">
+          <option value="Malpighiaceae">
+          <option value="Malvaceae">
+          <option value="Meliaceae">
+          <option value="Moraceae">
+          <option value="Muntingiaceae">
+          <option value="Myrtacae">
+          <option value="Rubiaceae">
+          <option value="Salicaceae">
+          <option value="Sapindaceae">
+          <option value="Sapotaceae">
+          <option value="Urticaceae">
+          <option value="Verbenaceae">
+        </datalist>
+      </div>
+      <div class="col-4"></div>
+    </div>
+
+    <div class="row w-100 align-items-center">
+      <div class="col text-center mb-5">
+        <button class="btn">Agregar</button>
+      </div>	
+    </div>
+  </div>
+
+
+</body>
+
+<script>
+  const btn = document.querySelector('#menu-btn');
+  const menu = document.querySelector('#nav');
+  btn.addEventListener('click', e => {
+    menu.classList.toggle("menu-expanded");
+    menu.classList.toggle("menu-collapsed");
+
+    document.querySelector('body').classList.toggle('body-expanded');
+  });
+
+
+  const login = document.querySelector('.logout');
+  const main = document.querySelector('.user-login');
+  login.addEventListener('click', f => {
+    main.classList.toggle("login-expanded");
+    main.classList.toggle("login-collapsed");
+  });
+
+
+  let listElements = document.querySelectorAll('.list__button--click');
+
+  listElements.forEach(listElement => {
+    listElement.addEventListener('click', () => {
+
+      listElement.classList.toggle('arrow');
+
+      let height = 0;
+      let menu = listElement.nextElementSibling;
+      if (menu.clientHeight == "0") {
+        height = menu.scrollHeight;
+      }
+      menu.style.height = `${height}px`;
+    })
+  });
+</script>
+
+</html>
